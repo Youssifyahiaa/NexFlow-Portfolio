@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NexFlow | AI Automation & Agentic Systems</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              500: '#6366f1', // Indigo
+              600: '#4f46e5',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#0b0f17] text-slate-200 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+  <!-- Glow Background Effect -->
+  <div class="fixed inset-0 overflow-hidden pointer-events-none -z-10">
+    <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-indigo-600/15 blur-[120px] rounded-full"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-[#0b0f17]/70 border-b border-slate-800/80">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <!-- Logo (Replace assets/logo.png with your real path) -->
+        <!-- WITH THIS: -->
+        <img src="assets/NexFlow-Logo.jpeg" alt="NexFlow Logo" class="h-8 w-auto object-contain rounded-md" />
+        <span class="text-lg font-bold tracking-tight text-white">NexFlow</span>
+      </div>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm text-slate-400 font-medium">
+        <a href="#projects" class="hover:text-white transition-colors">Case Studies</a>
+        <a href="#stack" class="hover:text-white transition-colors">Stack</a>
+        <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+      </nav>
+
+      <a href="#contact" class="text-xs font-semibold px-4 py-2 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition">
+        Let's Talk
+      </a>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 pt-20 pb-28">
+
+    <!-- Hero Section -->
+    <section class="text-center max-w-3xl mx-auto mb-28">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold tracking-wide uppercase mb-6">
+        <span class="w-2 h-2 rounded-full bg-indigo-400 animate-pulse"></span>
+        AI Automation & Agents
+      </div>
+
+      <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight sm:leading-tight mb-6">
+        We architect custom <br/>
+        <span class="bg-gradient-to-r from-indigo-400 via-sky-300 to-cyan-400 bg-clip-text text-transparent">
+          AI & automation systems
+        </span>
+      </h1>
+
+      <p class="text-base sm:text-lg text-slate-400 leading-relaxed mb-8">
+        We build end-to-end autonomous business workflows, conversational AI agents, and custom backend integrations that scale your operations 24/7.
+      </p>
+
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <a href="#projects" class="px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm transition-all shadow-lg shadow-indigo-500/25">
+          View Projects
+        </a>
+        <a href="#contact" class="px-6 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 font-medium text-sm border border-slate-800 transition-all">
+          Book Consultation
+        </a>
+      </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section id="projects" class="mb-28">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight mb-2">Featured Deployments</h2>
+          <p class="text-slate-400 text-sm">Real-world AI implementations and backend workflows.</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <!-- Project 1: OnlyMed -->
+        <div class="group relative rounded-2xl bg-slate-900/60 border border-slate-800/80 p-6 sm:p-8 hover:border-indigo-500/50 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-semibold uppercase tracking-wider text-indigo-400">Healthcare Sales Automation</span>
+              <i data-lucide="bot" class="w-5 h-5 text-slate-400 group-hover:text-indigo-400 transition-colors"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">OnlyMed — Conversational AI & Lead Engine</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              Meta API direct integration with Supabase vector RAG system answering medical inquiries, qualifying sales prospects, and routing complex cases to human doctors seamlessly.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-800/60 text-xs">
+            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 font-mono">Instagram Graph API</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 font-mono">Meta Webhooks</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 font-mono">n8n</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 font-mono">Supabase</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 font-mono">PostgreSQL (pgvector)</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 font-mono">RAG Pipeline</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 font-mono">OpenAI / Gemini Embeddings</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 font-mono">Human-in-the-Loop Escalation</span>
+          </div>
+        </div>
+
+        <!-- Project 2: IG DM Automation -->
+        <div class="group relative rounded-2xl bg-slate-900/60 border border-slate-800/80 p-6 sm:p-8 hover:border-indigo-500/50 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-semibold uppercase tracking-wider text-sky-400">Social Commerce</span>
+              <i data-lucide="messages-square" class="w-5 h-5 text-slate-400 group-hover:text-sky-400 transition-colors"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Instagram Auto-Engagement & DM Pipelines</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              Scalable DM & comment listener using Gemini LLM nodes for contextual responses, rate-limiting queue controls, and automatic Google Sheets CRM syncing.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-800/60 text-xs">
+            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 font-mono">Instagram Graph API</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 font-mono">Gemini 1.5 Pro</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 font-mono">n8n</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 font-mono">REST Webhooks</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 font-mono">Rate Limiting & Queues</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 font-mono">System Prompt Engineering</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 font-mono">Google Sheets API</span>
+          </div>
+        </div>
+
+        <!-- Project 3: AI Media Pipeline -->
+        <div class="group relative rounded-2xl bg-slate-900/60 border border-slate-800/80 p-6 sm:p-8 hover:border-indigo-500/50 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-semibold uppercase tracking-wider text-amber-400">Generative Media</span>
+              <i data-lucide="sparkles" class="w-5 h-5 text-slate-400 group-hover:text-amber-400 transition-colors"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Marketing House — Autonomous Marketing Asset Engine</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              Programmatic asset creation pipelines linking text triggers with fal.ai and Flux models to generate high-conversion marketing graphics and promotional animations.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-800/60 text-xs">
+            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 font-mono">fal.ai API</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 font-mono">Flux.1 Models</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 font-mono">n8n Automation</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 font-mono">Automated Prompt Crafting</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 font-mono">Cloud Asset Storage</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 font-mono">Video Animation API</span>
+          </div>
+        </div>
+
+        <!-- Project 4: Financial Accounting Bot -->
+        <div class="group relative rounded-2xl bg-slate-900/60 border border-slate-800/80 p-6 sm:p-8 hover:border-indigo-500/50 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-semibold uppercase tracking-wider text-emerald-400">Internal Operations</span>
+              <i data-lucide="calculator" class="w-5 h-5 text-slate-400 group-hover:text-emerald-400 transition-colors"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Telegram Revenue & Expense Auditor</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              Internal financial telemetry bot using Telegram triggers to log expenses, track agency commissions, and calculate project margins dynamically.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-800/60 text-xs">
+            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 font-mono">Telegram Bot API</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 font-mono">n8n Webhook Triggers</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 font-mono">Google Sheets API</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 font-mono">JavaScript (Code Nodes)</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 font-mono">Automated Ledger Calculations</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+<!-- Full Enterprise Tech Stack Section -->
+<section id="stack" class="mb-28">
+  <div class="text-center max-w-xl mx-auto mb-14">
+    <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight mb-2">Our Technology Stack</h2>
+    <p class="text-slate-400 text-sm">Enterprise-grade automation tooling, custom agentic frameworks, and backend infrastructure.</p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!-- 1. AI Models & Multimodal Inference -->
+    <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition">
+      <div class="flex items-center gap-2 mb-4">
+        <i data-lucide="cpu" class="w-4 h-4 text-indigo-400"></i>
+        <h3 class="text-xs font-semibold uppercase tracking-wider text-indigo-400">AI Models & Vision</h3>
+      </div>
+      <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-300">
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">Gemini 1.5 Pro</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">Claude 3.5 Sonnet</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">GPT-4o</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">Llama 3</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">fal.ai</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">Flux.1</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">Whisper API</span>
+      </div>
+    </div>
+
+    <!-- 2. Workflow Orchestration & Pipelines -->
+    <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition">
+      <div class="flex items-center gap-2 mb-4">
+        <i data-lucide="git-branch" class="w-4 h-4 text-sky-400"></i>
+        <h3 class="text-xs font-semibold uppercase tracking-wider text-sky-400">Automation & Orchestration</h3>
+      </div>
+      <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-300">
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">n8n (Self-Hosted)</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">Make (Integromat)</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">LangChain</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">LlamaIndex</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">Webhooks</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">Cron Schedulers</span>
+      </div>
+    </div>
+
+    <!-- 3. Databases & Vector Search -->
+    <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition">
+      <div class="flex items-center gap-2 mb-4">
+        <i data-lucide="database" class="w-4 h-4 text-emerald-400"></i>
+        <h3 class="text-xs font-semibold uppercase tracking-wider text-emerald-400">Databases & RAG</h3>
+      </div>
+      <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-300">
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">Supabase</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">PostgreSQL (pgvector)</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">Pinecone</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">Qdrant</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">Firebase</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">Redis (Queue/Cache)</span>
+      </div>
+    </div>
+
+    <!-- 4. Social & Communication APIs -->
+    <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition">
+      <div class="flex items-center gap-2 mb-4">
+        <i data-lucide="message-square-code" class="w-4 h-4 text-amber-400"></i>
+        <h3 class="text-xs font-semibold uppercase tracking-wider text-amber-400">Channels & Messaging</h3>
+      </div>
+      <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-300">
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">Instagram Graph API</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">WhatsApp Cloud API</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">Telegram Bot API</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">Slack Webhooks</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">SendGrid / Resend</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">ManyChat API</span>
+      </div>
+    </div>
+
+    <!-- 5. Languages & Backend Code -->
+    <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition">
+      <div class="flex items-center gap-2 mb-4">
+        <i data-lucide="code" class="w-4 h-4 text-purple-400"></i>
+        <h3 class="text-xs font-semibold uppercase tracking-wider text-purple-400">Core Engineering</h3>
+      </div>
+      <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-300">
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">Python (FastAPI)</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">JavaScript / Node.js</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">TypeScript</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">Docker</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">Git / GitHub</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">REST APIs</span>
+      </div>
+    </div>
+
+    <!-- 6. Business Operations & Cloud -->
+    <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition">
+      <div class="flex items-center gap-2 mb-4">
+        <i data-lucide="layers" class="w-4 h-4 text-rose-400"></i>
+        <h3 class="text-xs font-semibold uppercase tracking-wider text-rose-400">CRMs & Infrastructure</h3>
+      </div>
+      <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-300">
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">Google Workspace</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">HubSpot CRM</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">Airtable</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">Notion API</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">Stripe Payments</span>
+        <span class="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50">Vercel / Cloudflare</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- Contact / CTA Section -->
+    <section id="contact" class="rounded-3xl bg-gradient-to-b from-slate-900 to-[#0d131f] border border-slate-800 p-8 sm:p-12 text-center relative overflow-hidden">
+      <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight mb-4">
+        Ready to automate your operations?
+      </h2>
+      <p class="text-slate-400 max-w-lg mx-auto text-sm leading-relaxed mb-8">
+        Send us a quick message with your current bottleneck and let's design an autonomous system for your brand.
+      </p>
+
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <!-- Direct Phone Call Button -->
+        <a href="tel:+20101098238870" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm transition shadow-lg shadow-indigo-500/20">
+          <i data-lucide="phone-call" class="w-4 h-4"></i> Give Us a Call
+        </a>
+        <!-- Replace with your actual WhatsApp link / phone number -->
+        <a href="https://wa.me/201098238870" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-medium text-sm transition">
+          <i data-lucide="message-circle" class="w-4 h-4"></i> Chat on WhatsApp
+        </a>
+        <!-- Replace with your actual agency email -->
+        <a href="mailto:abdelrahmansafwat676@gmail.com" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-slate-800 hover:bg-slate-750 text-slate-200 border border-slate-700 font-medium text-sm transition">
+          <i data-lucide="mail" class="w-4 h-4"></i> Send an Email
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-900 py-8 text-center text-xs text-slate-500">
+    © 2026 NexFlow. Built for high-performance automation.
+  </footer>
+
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
